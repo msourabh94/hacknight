@@ -34,7 +34,7 @@ public class UserController {
     @PostMapping(value = "/login")
     public ResponseEntity<?> login(@RequestBody UserLoginData authenticationRequest)
             throws Exception {
-        return ResponseEntity.ok(new JwtResponse(userAuthService.authenticateAndGenerateToken(authenticationRequest.getEmail(), authenticationRequest.getPassword())));
+        return ResponseEntity.ok(userAuthService.authenticateAndGenerateToken(authenticationRequest.getEmail(), authenticationRequest.getPassword()));
     }
 
 
@@ -42,7 +42,7 @@ public class UserController {
     public ResponseEntity<?> register(@RequestBody UserRegistrationRequest registrationRequest) throws Exception {
         Constants.STATUS registrationStatus = registerService.registerUser(registrationRequest);
         if (registrationStatus.equals(Constants.STATUS.SUCCESSFULLY_REGISTERED)) {
-            String token = userAuthService.authenticateAndGenerateToken(registrationRequest.getEmail(), registrationRequest.getPassword());
+            String token = userAuthService.authenticateAndGenerateToken(registrationRequest.getEmail(), registrationRequest.getPassword()).getToken();
             return new ResponseEntity<>(UserRegistrationResponse.builder().status(registrationStatus).token(token).userRegistrationRequest(registrationRequest).build(), HttpStatus.CREATED);
         } else {
             return new ResponseEntity<>(UserRegistrationResponse.builder().status(registrationStatus).build(), HttpStatus.CONFLICT);

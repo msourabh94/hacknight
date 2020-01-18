@@ -2,6 +2,7 @@ package com.shakaalgang.service;
 
 import com.shakaalgang.config.JwtTokenUtil;
 import com.shakaalgang.entity.UserEntity;
+import com.shakaalgang.model.JwtResponse;
 import com.shakaalgang.model.UserLoginData;
 import com.shakaalgang.repository.UserRepository;
 import org.springframework.security.authentication.AuthenticationManager;
@@ -23,20 +24,23 @@ public class UserAuthService {
     private final AuthenticationManager authenticationManager;
     private final JwtTokenUtil jwtTokenUtil;
     private final UserDetailsAuthService userDetailsAuthService;
+    private final UserRepository userRepository;
 
 
     UserAuthService(
             AuthenticationManager authenticationManager,
             JwtTokenUtil jwtTokenUtil,
-            UserDetailsAuthService userDetailsAuthService) {
+            UserDetailsAuthService userDetailsAuthService,
+            UserRepository userRepository) {
         this.authenticationManager = authenticationManager;
         this.jwtTokenUtil = jwtTokenUtil;
         this.userDetailsAuthService =userDetailsAuthService;
+        this.userRepository = userRepository;
     }
 
-    public String authenticateAndGenerateToken(String email, String password) throws Exception {
+    public JwtResponse authenticateAndGenerateToken(String email, String password) throws Exception {
         UserDetails userDetails = authenticate(email, password);
-        return jwtTokenUtil.generateToken(userDetails);
+        return new JwtResponse(jwtTokenUtil.generateToken(userDetails),userRepository.getOne(email).getUserType());
     }
 
     /**

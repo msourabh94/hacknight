@@ -8,4 +8,5 @@ public class Constants {
     public enum STATUS {
         USERNAME_EXISTS, SUCCESSFULLY_REGISTERED
     };
+    public static final String USER_TYPE_ADMIN ="A";
 }
