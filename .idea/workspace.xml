@@ -2,18 +2,38 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ebe94b7a-3ab6-4f59-8757-ef26fa318146" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/shakaalgang/repository/ApplicationRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/shakaalgang/service/ApplicationService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/shakaalgang/controller/TransactionController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/shakaalgang/repository/TransactionRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/shakaalgang/service/TransactionService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/shakaalgang/controller/AdminController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/shakaalgang/controller/AdminController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/shakaalgang/controller/ApplicationController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/shakaalgang/controller/ApplicationController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/shakaalgang/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/shakaalgang/controller/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/shakaalgang/entity/ApplicationDetailsEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/shakaalgang/entity/ApplicationDetailsEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/shakaalgang/entity/ProfileDetailsEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/shakaalgang/entity/ProfileDetailsEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/shakaalgang/entity/UserEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/shakaalgang/entity/UserEntity.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/shakaalgang/model/JwtResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/shakaalgang/model/JwtResponse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/shakaalgang/repository/ApplicationRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/shakaalgang/repository/ApplicationRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/shakaalgang/repository/ProfileRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/shakaalgang/repository/ProfileRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/shakaalgang/repository/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/shakaalgang/repository/UserRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/shakaalgang/service/AdminService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/shakaalgang/service/AdminService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/shakaalgang/service/ApplicationService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/shakaalgang/service/ApplicationService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/shakaalgang/service/RegisterService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/shakaalgang/service/RegisterService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/shakaalgang/service/UserAuthService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/shakaalgang/service/UserAuthService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/shakaalgang/service/UserDetailsAuthService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/shakaalgang/service/UserDetailsAuthService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/shakaalgang/utils/Constants.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/shakaalgang/utils/Constants.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/shakaalgang/controller/AdminController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/shakaalgang/controller/AdminController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/shakaalgang/controller/UserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/shakaalgang/controller/UserController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/shakaalgang/controller/ApplicationController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/shakaalgang/controller/ApplicationController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/shakaalgang/entity/UserEntity.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/shakaalgang/entity/UserEntity.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/shakaalgang/model/JwtResponse$JwtResponseBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/shakaalgang/model/JwtResponse$JwtResponseBuilder.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/shakaalgang/model/JwtResponse.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/shakaalgang/model/JwtResponse.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/shakaalgang/repository/ApplicationRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/shakaalgang/repository/ApplicationRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/shakaalgang/repository/UserRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/shakaalgang/repository/UserRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/shakaalgang/service/AdminService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/shakaalgang/service/AdminService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/shakaalgang/service/ApplicationService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/shakaalgang/service/ApplicationService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/shakaalgang/service/RegisterService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/shakaalgang/service/RegisterService.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/shakaalgang/service/UserAuthService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/shakaalgang/service/UserAuthService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/shakaalgang/utils/Constants.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/shakaalgang/utils/Constants.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/shakaalgang/service/UserDetailsAuthService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/shakaalgang/service/UserDetailsAuthService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/shakaalgang/utils/Constants$STATUS.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/shakaalgang/utils/Constants$STATUS.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,10 +81,10 @@
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.shakaalgang.repository" />
+      <recent name="com.shakaalgang.service" />
       <recent name="com.shakaalgang.controller" />
       <recent name="com.shakaalgang.model" />
       <recent name="com.shakaalgang.entity" />
-      <recent name="com.javainuse.repository" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\hacknight\hacknight\target\azure-webapp\spring-boot-jwt-1579375915653-52d74ad2-b862-4ceb-a69b-a91ea1bf7faf" />
@@ -145,7 +165,7 @@
       <workItem from="1579348813309" duration="6933000" />
       <workItem from="1579359058897" duration="4515000" />
       <workItem from="1579365558989" duration="16566000" />
-      <workItem from="1579385641236" duration="2263000" />
+      <workItem from="1579385641236" duration="6095000" />
     </task>
     <servers />
   </component>
@@ -169,10 +189,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="618" y="302" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog/0.0.1536.824@0.0.1536.824" timestamp="1579365628374" />
-    <state x="262" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1579361049754">
+    <state x="262" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1579389118403">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="262" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1536.824@0.0.1536.824" timestamp="1579361049754" />
+    <state x="262" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1536.824@0.0.1536.824" timestamp="1579389118403" />
     <state x="93" y="93" width="1350" height="638" key="DiffContextDialog" timestamp="1579363752795">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -181,38 +201,38 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="549" y="168" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1579375164210" />
-    <state width="1493" height="275" key="GridCell.Tab.0.bottom" timestamp="1579387935418">
+    <state width="1493" height="343" key="GridCell.Tab.0.bottom" timestamp="1579391694479">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="275" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1579387935418" />
-    <state width="1493" height="275" key="GridCell.Tab.0.center" timestamp="1579387935418">
+    <state width="1493" height="343" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1579391694479" />
+    <state width="1493" height="343" key="GridCell.Tab.0.center" timestamp="1579391694478">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="275" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1579387935418" />
-    <state width="1493" height="275" key="GridCell.Tab.0.left" timestamp="1579387935418">
+    <state width="1493" height="343" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1579391694478" />
+    <state width="1493" height="343" key="GridCell.Tab.0.left" timestamp="1579391694478">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="275" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1579387935418" />
-    <state width="1493" height="275" key="GridCell.Tab.0.right" timestamp="1579387935418">
+    <state width="1493" height="343" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1579391694478" />
+    <state width="1493" height="343" key="GridCell.Tab.0.right" timestamp="1579391694479">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="275" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1579387935418" />
-    <state width="1493" height="275" key="GridCell.Tab.1.bottom" timestamp="1579387935418">
+    <state width="1493" height="343" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1579391694479" />
+    <state width="1493" height="343" key="GridCell.Tab.1.bottom" timestamp="1579391694479">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="275" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1579387935418" />
-    <state width="1493" height="275" key="GridCell.Tab.1.center" timestamp="1579387935418">
+    <state width="1493" height="343" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1579391694479" />
+    <state width="1493" height="343" key="GridCell.Tab.1.center" timestamp="1579391694479">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="275" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1579387935418" />
-    <state width="1493" height="275" key="GridCell.Tab.1.left" timestamp="1579387935418">
+    <state width="1493" height="343" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1579391694479" />
+    <state width="1493" height="343" key="GridCell.Tab.1.left" timestamp="1579391694479">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="275" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1579387935418" />
-    <state width="1493" height="275" key="GridCell.Tab.1.right" timestamp="1579387935418">
+    <state width="1493" height="343" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1579391694479" />
+    <state width="1493" height="343" key="GridCell.Tab.1.right" timestamp="1579391694479">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="275" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1579387935418" />
+    <state width="1493" height="343" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1579391694479" />
     <state width="1493" height="261" key="GridCell.Tab.2.bottom" timestamp="1579358889842">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -245,10 +265,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="425" y="187" width="672" height="677" key="run.anything.popup/0.0.1536.824@0.0.1536.824" timestamp="1579381989299" />
-    <state x="425" y="66" width="672" height="676" key="search.everywhere.popup" timestamp="1579382079507">
+    <state x="425" y="66" width="672" height="676" key="search.everywhere.popup" timestamp="1579390466457">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="425" y="66" width="672" height="676" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1579382079507" />
+    <state x="425" y="66" width="672" height="676" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1579390466457" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

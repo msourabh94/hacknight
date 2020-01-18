@@ -22,7 +22,7 @@ public class UserDetailsAuthService implements UserDetailsService {
 
     public UserDetails loadUserByUsername(String email) throws UsernameNotFoundException {
 
-        Optional<UserEntity> userEntity = userRepository.findById(email);
+        Optional<UserEntity> userEntity = userRepository.findByEmail(email);
         if (userEntity.isPresent()) {
             return new User(userEntity.get().getEmail(), userEntity.get().getPassword(),
                     new ArrayList<>());

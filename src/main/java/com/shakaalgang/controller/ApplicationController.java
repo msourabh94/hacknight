@@ -1,12 +1,11 @@
 package com.shakaalgang.controller;
 
-import com.shakaalgang.model.UserRegistrationRequest;
-import com.shakaalgang.model.UserRegistrationResponse;
+import com.shakaalgang.entity.ApplicationDetailsEntity;
 import com.shakaalgang.service.ApplicationService;
 import com.shakaalgang.utils.Constants;
-import org.springframework.http.HttpStatus;
-import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
+
+import java.util.List;
 
 @RestController
 @CrossOrigin()
@@ -15,15 +14,28 @@ public class ApplicationController {
 
     private final ApplicationService applicationService;
 
-    ApplicationController(ApplicationService applicationService){
+    ApplicationController(ApplicationService applicationService) {
         this.applicationService = applicationService;
     }
 
-    @PostMapping({"/lenders"})
-    public ResponseEntity<?> getApplicationListForLenders(@RequestBody UserRegistrationRequest registrationRequest) throws Exception {
-        //return ap
-        return  null;
+    @GetMapping({"/lenders"})
+    public List<ApplicationDetailsEntity> getApplicationListForLenders(@RequestParam Long lenderId) throws Exception {
+        return applicationService.getApplicationListForLenders(lenderId);
     }
 
+    @GetMapping({"/borrowers"})
+    public List<ApplicationDetailsEntity> getApplicationListForBorrowers(@RequestParam Long borrowerId) throws Exception {
+        return applicationService.registerApplication(borrowerId);
+    }
+
+    @PostMapping({"/apply"})
+    public ApplicationDetailsEntity registerApplication(@RequestBody ApplicationDetailsEntity applicationDetailsEntity) throws Exception {
+        return applicationService.registerApplication(applicationDetailsEntity);
+    }
+
+    @PutMapping({"/update-application-status"})
+    public Constants.STATUS updateApplicationStatus(@RequestParam Long applicationId, @RequestParam String applicationStatus) throws Exception {
+        return applicationService.updateApplicationStatus(applicationStatus, applicationId);
+    }
 
 }

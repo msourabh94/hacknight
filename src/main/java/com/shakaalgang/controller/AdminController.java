@@ -1,8 +1,8 @@
 package com.shakaalgang.controller;
 
 import com.shakaalgang.entity.ProfileDetailsEntity;
-import com.shakaalgang.model.UserLoginData;
 import com.shakaalgang.service.AdminService;
+import com.shakaalgang.utils.Constants;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
@@ -17,9 +17,14 @@ public class AdminController {
 		this.adminService = adminService;
 	}
 
-	@GetMapping({ "/kycList" })
-	public List<ProfileDetailsEntity> getKycList(@RequestBody String email) {
-		return adminService.getKycList(email);
+	@GetMapping({ "/kyc-list" })
+	public List<ProfileDetailsEntity> getKycList(@RequestParam Long userId) {
+		return adminService.getKycList(userId);
+	}
+
+	@PutMapping({ "/update-kyc-status" })
+	public Constants.STATUS updateKycStatus(@RequestParam Long userId, @RequestParam String kycStatus) {
+		return adminService.updateKycStatus(userId, kycStatus);
 	}
 
 

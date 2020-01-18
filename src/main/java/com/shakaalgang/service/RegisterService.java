@@ -31,7 +31,7 @@ public class RegisterService {
      * @return Status of registration
      */
     public Constants.STATUS registerUser(UserRegistrationRequest registrationRequest) {
-        boolean userExists = userRepository.findById(registrationRequest.getEmail()).isPresent();
+        boolean userExists = userRepository.findByEmail(registrationRequest.getEmail()).isPresent();
         if (!userExists) {
             UserEntity createdUserEntity = userRepository.save(
                     UserEntity.builder()

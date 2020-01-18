@@ -34,13 +34,14 @@ public class UserAuthService {
             UserRepository userRepository) {
         this.authenticationManager = authenticationManager;
         this.jwtTokenUtil = jwtTokenUtil;
-        this.userDetailsAuthService =userDetailsAuthService;
+        this.userDetailsAuthService = userDetailsAuthService;
         this.userRepository = userRepository;
     }
 
     public JwtResponse authenticateAndGenerateToken(String email, String password) throws Exception {
         UserDetails userDetails = authenticate(email, password);
-        return JwtResponse.builder().jwttoken(jwtTokenUtil.generateToken(userDetails)).accountType(userRepository.getOne(email).getUserType()).build();
+        Optional<UserEntity> userEntity = userRepository.findByEmail(email);
+        return JwtResponse.builder().jwttoken(jwtTokenUtil.generateToken(userDetails)).accountType(userEntity.isPresent() ? userEntity.get().getUserType() : null).userId(userEntity.isPresent() ? userEntity.get().getId() : null).build();
     }
 
     /**
@@ -62,7 +63,6 @@ public class UserAuthService {
             throw new Exception("INVALID_CREDENTIALS", e);
         }
     }
-
 
 
 }
