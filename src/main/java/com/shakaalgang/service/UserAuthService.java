@@ -40,7 +40,7 @@ public class UserAuthService {
 
     public JwtResponse authenticateAndGenerateToken(String email, String password) throws Exception {
         UserDetails userDetails = authenticate(email, password);
-        return new JwtResponse(jwtTokenUtil.generateToken(userDetails),userRepository.getOne(email).getUserType());
+        return JwtResponse.builder().jwttoken(jwtTokenUtil.generateToken(userDetails)).accountType(userRepository.getOne(email).getUserType()).build();
     }
 
     /**
