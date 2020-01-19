@@ -6,6 +6,7 @@ import com.shakaalgang.model.ApplicationResponseForLenders;
 import com.shakaalgang.repository.ApplicationRepository;
 import com.shakaalgang.repository.FirmRepository;
 import com.shakaalgang.repository.ProfileRepository;
+import com.shakaalgang.utils.CommonUtils;
 import com.shakaalgang.utils.Constants;
 import org.springframework.stereotype.Service;
 
@@ -49,7 +50,7 @@ public class ApplicationService {
                             .firmDetailsEntity(firmRepository.findByUserId(applicationDetailsEntity.getBorrowerId()))
                             .profileDetailsEntity(profileRepository.findByUserId(applicationDetailsEntity.getBorrowerId()))
                             .outstandingLoanAmount(totalAppliedLoan - totalPaidAmount)
-                            .riskyProfile(totalAppliedLoan < totalPaidAmount)
+                            .riskyProfile(CommonUtils.riskProfileCheck(totalAppliedLoan, totalPaidAmount))
                             .status(applicationDetailsEntity.getStatus())
                             .build());
                 }

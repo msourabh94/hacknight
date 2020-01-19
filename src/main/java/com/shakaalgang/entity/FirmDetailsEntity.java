@@ -34,8 +34,6 @@ public class FirmDetailsEntity {
     private String firmAddress;
     @Column(name = "updated_at")
     private Date updatedAt;
-    @Column(name = "created_by")
-    private Long createdBy;
     @Column(name = "updated_by")
     private Long updatedBy;
 }

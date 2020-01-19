@@ -58,7 +58,6 @@ public class RegisterService {
                     .cin(registrationRequest.getCin())
                     .directorMobileNumber(registrationRequest.getDirectorMobileNumber())
                     .directorName(registrationRequest.getDirectorName())
-                    .createdBy(createdUserEntity.getId())
                     .incorpDate(registrationRequest.getIncorpDate())
                     .tan(registrationRequest.getTan())
                     .updatedBy(createdUserEntity.getId())
