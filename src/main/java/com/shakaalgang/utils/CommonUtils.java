@@ -12,9 +12,9 @@ public class CommonUtils {
     }
 
     public static boolean riskProfileCheck(double totalAppliedLoan, double totalPaidAmount) {
-        return totalAppliedLoan < totalPaidAmount;
+        return totalAppliedLoan > totalPaidAmount;
     }
     public boolean testCheck(double totalAppliedLoan, double totalPaidAmount) {
-        return totalAppliedLoan < totalPaidAmount;
+        return totalAppliedLoan > totalPaidAmount;
     }
 }

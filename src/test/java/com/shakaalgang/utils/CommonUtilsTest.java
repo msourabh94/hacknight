@@ -17,6 +17,6 @@ public class CommonUtilsTest {
     @Test
     public void riskyProfile() {
         Boolean result = commonUtils.testCheck(1000, 500);
-        assertTrue(!result);
+        assertTrue(result);
     }
 }

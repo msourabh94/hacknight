@@ -75,5 +75,4 @@ public class ApplicationService {
         } else
             return Constants.STATUS.FAILED_TO_UPDATE;
     }
-
 }

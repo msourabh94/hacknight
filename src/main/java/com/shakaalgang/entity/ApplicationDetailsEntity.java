@@ -23,7 +23,7 @@ public class ApplicationDetailsEntity {
     @Column(name = "borrower_id")
     private Long borrowerId;
     @Column(name = "lender_id")
-    private String lenderId;
+    private Long lenderId;
     @Column(name = "status")
     private String status;
     @Column(name = "amount")
