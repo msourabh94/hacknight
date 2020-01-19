@@ -1,6 +1,7 @@
 package com.shakaalgang.controller;
 
 import com.shakaalgang.entity.ApplicationDetailsEntity;
+import com.shakaalgang.model.ApplicationResponseForLenders;
 import com.shakaalgang.service.ApplicationService;
 import com.shakaalgang.utils.Constants;
 import org.springframework.web.bind.annotation.*;
@@ -19,7 +20,7 @@ public class ApplicationController {
     }
 
     @GetMapping({"/lenders"})
-    public List<ApplicationDetailsEntity> getApplicationListForLenders(@RequestParam Long lenderId) throws Exception {
+    public List<ApplicationResponseForLenders> getApplicationListForLenders(@RequestParam Long lenderId) throws Exception {
         return applicationService.getApplicationListForLenders(lenderId);
     }
 

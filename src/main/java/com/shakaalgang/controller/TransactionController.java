@@ -20,17 +20,17 @@ public class TransactionController {
     }
 
     @GetMapping({"/lenders"})
-    public List<TransactionDetailsEntity> getApplicationListForLenders(@RequestParam Long lenderId) throws Exception {
+    public List<TransactionDetailsEntity> getTransactionListForLenders(@RequestParam Long lenderId) throws Exception {
         return transactionService.getTransactionListForLenders(lenderId);
     }
 
     @GetMapping({"/borrowers"})
-    public List<TransactionDetailsEntity> getApplicationListForBorrowers(@RequestParam Long borrowerId) throws Exception {
+    public List<TransactionDetailsEntity> getTransactionListForBorrowers(@RequestParam Long borrowerId) throws Exception {
         return transactionService.getTransactionListForBorrowers(borrowerId);
     }
 
     @PostMapping({"/apply"})
-    public TransactionDetailsEntity registerApplication(@RequestBody TransactionDetailsEntity transactionDetailsEntity) throws Exception {
+    public TransactionDetailsEntity registerTransaction(@RequestBody TransactionDetailsEntity transactionDetailsEntity) throws Exception {
         return transactionService.registerTransaction(transactionDetailsEntity);
     }
 

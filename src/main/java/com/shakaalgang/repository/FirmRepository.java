@@ -7,4 +7,5 @@ import org.springframework.stereotype.Repository;
 
 @Repository
 public interface FirmRepository extends JpaRepository<FirmDetailsEntity, Long> {
+    FirmDetailsEntity findByUserId(Long userId);
 }
