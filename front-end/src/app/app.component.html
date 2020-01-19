@@ -1,0 +1,45 @@
+<ng-template #register>
+  <div class="modal-header">
+    <h4 class="modal-title pull-left">Welcome to LenDenBaazaaar</h4>
+  </div>
+  <div class="modal-body">
+    <div class="row">
+      <div class="col-sm-12 register-caption">
+        <h3>Register Now!</h3>
+      </div>
+    </div>
+    <hr />
+    <div class="row">
+      <div class="col-sm-6">
+        <button class="btn btn-success" (click)="navigate('lender')">
+          Lender
+        </button>
+      </div>
+      <div class="col-sm-6">
+        <button class="btn btn-warning" (click)="navigate('borrower')">
+          Borrower
+        </button>
+      </div>
+    </div>
+    <hr />
+    <div class="row">
+      <div class="col-sm-12">
+        <h4>Have an account?</h4>
+        <button class="btn btn-primary" (click)="navigate('login')">
+          Sign In
+        </button>
+      </div>
+    </div>
+  </div>
+</ng-template>
+
+<app-header *ngIf="!showCarousel"></app-header>
+
+<carousel *ngIf="showCarousel" [interval]="myInterval" [(activeSlide)]="activeSlideIndex">
+  <slide *ngFor="let slide of slides; let index = index">
+    <img [src]="slide.image" alt="image slide" style="display: block; width: 100%;" />
+  </slide>
+</carousel>
+<br />
+
+<router-outlet></router-outlet>

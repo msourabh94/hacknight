@@ -1,0 +1,25 @@
+<div class="container">
+  <form [formGroup]="signInForm">
+    <div class="row">
+      <div class="col-sm-12">
+        <label>Email</label>
+        <input formControlName="email" type="text" class="form-control">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-12">
+        <label>Password</label>
+        <input formControlName="password" type="password" class="form-control">
+      </div>
+    </div>
+    <br>
+
+    <div class="row">
+      <div class="col-sm-12">
+        <button class="btn btn-primary" (click)="login()">
+          Login
+        </button>
+      </div>
+    </div>
+  </form>
+</div>

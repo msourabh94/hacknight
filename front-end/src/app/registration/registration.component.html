@@ -1,0 +1,118 @@
+<div class="container">
+  <form [formGroup]="registrationForm">
+    <div class="row">
+      <div class="col-sm-12">
+        <label>Email</label>
+        <input formControlName="email" type="text" class="form-control">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-12">
+        <label>Password</label>
+        <input formControlName="password" type="password" class="form-control">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-12">
+        <label>UserType</label>
+        <select formControlName="userType">
+          <option *ngFor="let type of userTypes" [ngValue]="type.value">{{type.name}}</option>
+        </select>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-12">
+        <label>First Name</label>
+        <input formControlName="firstName" type="text" class="form-control">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-12">
+        <label>Last Name</label>
+        <input formControlName="lastName" type="text" class="form-control">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-12">
+        <label>DOB</label>
+        <input type="text" placeholder="Datepicker" class="form-control" formControlName="dob" bsDatepicker>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-12">
+        <label>Father's Name</label>
+        <input formControlName="fathersName" type="text" class="form-control">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-12">
+        <label>PAN</label>
+        <input formControlName="pan" type="text" class="form-control">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-12">
+        <label>Present Address</label>
+        <input formControlName="presentAddress" type="text" class="form-control">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-12">
+        <label>Permanent Address</label>
+        <input formControlName="permAddress" type="text" class="form-control">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-12">
+        <label>Present Address same as permanent address ? </label>
+        <input formControlName="presentPermSame" type="text" class="form-control">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-12">
+        <label>TAN</label>
+        <input formControlName="tan" type="text" class="form-control">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-12">
+        <label>CIN</label>
+        <input formControlName="cin" type="text" class="form-control">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-12">
+        <label>Incorporation Date</label>
+        <input type="text" placeholder="Datepicker" class="form-control" formControlName="incorpDate" bsDatepicker>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-12">
+        <label>Director Name</label>
+        <input formControlName="directorName" type="text" class="form-control">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-12">
+        <label>Director Mobile</label>
+        <input formControlName="directorMobileNumber" type="text" class="form-control">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-12">
+        <label>Firm Address</label>
+        <input formControlName="firmAddress" type="text" class="form-control">
+      </div>
+    </div>
+
+    <br>
+    <br>
+
+    <div class="row">
+      <div class="col-sm-6">
+        <button (click)="submitForm()" class="btn btn-primary">Submit</button>
+      </div>
+    </div>
+
+  </form>
+</div>

@@ -1,0 +1,9 @@
+.btn-success,
+.btn-warning,
+.btn-primary {
+  width: inherit
+}
+
+.register-caption {
+  text-align: center;
+}
